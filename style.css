@@ -229,10 +229,12 @@ main p {
 
     #sidebar {
         width: 52px;
+        height: 100%;
     }
 
     #sidebar.close {
         width: 240px;
+        height: 100%;
     }
 }
 
