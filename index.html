@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <ul >
+            <li>
+                <span class="logo">lrmis.so</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    <i class="fi fi-rr-angle-double-small-left"></i>
+                </button>
+            </li>
+            
+            <li><a style=" color: white;" class="active" href="dhashboard.html">
+                <i class="fi fi-rr-apps"></i>
+                <span>Dashboard</span>
+            </a></li>
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-money-coin-transfer"></i>
+                <span>Land Transfer</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Transfer</a></li>
+                <li><a href="#">Transfered Lands</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;" class="fi fi-rr-wallet-arrow"></i>
+                <span>Billing Section</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Single Invoice</a></li>
+                <li><a href="#">Create Batcher</a></li>
+                <li><a href="#">Approve Batcher</a></li>
+                <li><a href="#">Batchers</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-inbox-in"></i> 
+                <span>Account Receivable</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Debtor Invoice</a></li>
+                <li><a href="#">Debtor Payments</a></li>
+                <li><a href="#">Delete Duplicate <br> Invoice</a></li>
+                <li><a href="#">Batchers</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-registration-paper"></i> 
+                <span>Partial Registration</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Yet To Register</a></li>
+                <li><a href="#">Masuulka Dhulka</a></li>
+                <li><a href="#">Land Parcels</a></li>
+                <li><a href="#">Data Correction</a></li>
+                <li><a href="#">Excel Import</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-house-chimney"></i>
+                <span>Registered</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Masuulka Dhulka</a></li>
+                <li><a href="#">Land Parcels</a></li>
+                <li><a href="#">Data Correction</a></li>
+                <li><a href="#">Enable Printing</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+
+             <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-user-pen"></i> 
+                <span>Account Settings</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Point Of Sale</a></li>
+                <li><a href="#">Cashiers</a></li>
+                <li><a href="#">Gl Account Groups</a></li>
+                <li><a href="#">Gl Account</a></li>
+                <li><a href="#">Journals</a></li>
+                <li><a href="#">Banks Accounts</a></li>
+                <li><a href="#">Currencies</a></li>
+                <li><a href="#">Currency Rates</a></li>
+                <li><a href="#">Free Types</a></li>
+                <li><a href="#">Property Grades</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+
+             <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-marker"
+></i>
+                <span>Location Settings</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Regions</a></li>
+                <li><a href="#">Districts</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">sectors</a></li>
+                <li><a href="#">Neighborhood</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-users-alt"></i>
+                <span>User Settings</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">User Accounts Setup</a></li>
+                <li><a href="#">User Roles</a></li>
+                <li><a href="#">User Permissions</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+            <li><a  class="active" href="dhashboard.html">
+                <i class="fi fi-rr-settings"></i>
+                <span>System Settings</span>
+            </a></li>
+
+
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class="fi fi-rr-ranking-podium-empty"></i>
+                <span>Reports</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Reports</a></li>
+                
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class=
+						"fi fi-rr-message-sms"></i>
+                <span>SMS Management</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">SMS Template</a></li>
+                    <li><a href="#">Single SMS</a></li>
+                    <li><a href="#">Bulk SMS</a></li>
+                    <li><a href="#">SMS Log</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+            
+
+
+            <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <i style=" font-size: 15px;"  class=
+						"fi fi-rr-badge"></i>
+                <span>Certificates</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+            </button>
+            <ul class="sub-menu">
+                <div>
+                    <li><a href="#">Printer Management</a></li>
+                    <li><a href="#">Printing Batches</a></li>
+                    <li><a href="#">Printing Report</a></li>
+                
+                </div>
+                
+            </ul>
+            </li>
+
+
+
+            
+
+
+            
+
+            
+
+            
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Hello World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni alias eos eveniet reiciendis at!</p>
+        </div>
+        <div class="container">
+            <h2>Example Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magni alias eos eveniet reiciendis at!</p>
+        </div>
+        <div class="container">
+            <h2>Hello World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reiciendis, ullam doloremque eaque pariatur tenetur ipsa cum voluptatibus, optio quam nisi architecto delectus, voluptas in obcaecati accusamus culpa earum ratione? Natus cupiditate optio nobis modi rem quis vero veritatis officiis. Fuga, unde. Autem, sapiente dignissimos repellendus, deserunt, ducimus quo voluptatem modi eos itaque asperiores officiis incidunt temporibus quod? Aliquam, est magnam doloremque obcaecati similique a ex eius accusamus! Ipsa rem dolorum, tempore aliquid mollitia eius, magni dolores iusto hic, laboriosam quas excepturi qui laudantium voluptates aperiam corrupti earum! Dolorem, quas sit. Quos ratione dolorum ipsum est odit, deserunt perspiciatis similique!</p>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
